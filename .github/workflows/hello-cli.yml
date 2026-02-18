@@ -8,3 +8,6 @@ jobs:
     steps:
       - name: Run a Greeting
         run: echo "This is a greeting CI pipeline activates on every push!"
+    - uses: actions/checkout@v4 
+    - name: Run python Tests
+      run: python33 test_calc.py
