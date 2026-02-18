@@ -1,10 +1,10 @@
-name:Greetring Window
+name: Greeting Window
 
-on:[push]
+on: [push]
 
 jobs:
   say-hello:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      -name:Run a Greeting
-       run: echo "This  is a greeting CI pipeline activates on every push!"
+      - name: Run a Greeting
+        run: echo "This is a greeting CI pipeline activates on every push!"
